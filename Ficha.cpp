@@ -201,6 +201,22 @@ void Ficha::Create_character(string Character_name_)
 //Fim dos atributos
 
 //Formações
+    cout << "Começaremos agora a parte das formações e para iniciarmos colocaremos aqui um lista de profissões e seus respectivos bônus!" << endl;
+    Professions();  //Cabeçalhos.h
+    cout << "Agora escolha uma formação: " << endl;
+    getline(cin, FormationI);
+    Expertise_from_profession(FormationI);
+    //Advantage_from_profession(Formation);
+    cout << "Agora escolha outra formação: " << endl;
+    getline(cin, FormationII);
+    Expertise_from_profession(FormationII);
+    //Advantage_from_profession(FormationII);
+        /*      Ficha_[i]-> Expertise_from_profession(Formation);
+                Ficha_[i]-> Advantage_from_profession(Formation);
+
+                Ps.: Possivelmente seja assim
+                Ps2.: Inclusão dos setters no fim.
+        */
 //Fim das formações
 
 //Perícias
