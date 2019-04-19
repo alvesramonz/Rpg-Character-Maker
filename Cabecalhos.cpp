@@ -27,3 +27,16 @@ void Presentation()
     cout << "     |edição'. Então aproveite! De jogador para jogador! |" << endl;
     cout << "     |___________________________________________________|" << endl;
 }
+
+void Choose_system()
+{
+    cout << "      ___________________________________________________ " << endl;
+    cout << "     |                                                   |" << endl; 
+    cout << "     |       Para prosseguir escolha seu sistema:        |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |       > Tormenta (Rpg)                            |" << endl; 
+    cout << "     |       > 7o Mar (2a Edição)                        |" << endl; 
+    cout << "     |                                                   |" << endl;
+    cout << "     |       > Sair                                      |" << endl;
+    cout << "     |___________________________________________________|" << endl; 
+}
