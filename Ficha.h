@@ -59,6 +59,7 @@ class Ficha
     //Fim dos Setters
     //Funções diversas
     void Campaign_verification();
+    void Create_campaign(string Campaign_name_);
 
 };
 
