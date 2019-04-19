@@ -23,6 +23,7 @@ class Ficha
     string Nation;
     string Religion;
     string Reputation;
+    int Richness;
 
 
 };
