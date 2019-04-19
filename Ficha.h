@@ -51,6 +51,9 @@ class Ficha
     int getArgucia();
     int getDeterminacao();
     int getPanache();
+        //Pericias 
+    int getMirar(), getAtletismo(), getBriga(), getConvencer(), getEmpatia(), getEsconder(), getIntimidar(), getObservar();
+    int getAtuar(), getCavalgar(), getNavegar(), getErudicao(), getSeduzir(), getFurto(), getArte_da_Guerra(), getArmas();
     //Fim dos Getters
     //Setters
     //Fim dos Setters
