@@ -213,3 +213,28 @@ void Ficha::Create_character(string Character_name_)
 
 //Fim da arcana
 }
+
+/*      Attribute_bonus()
+    -Possivelmente não irei usar, pois não imagino como da o return de cada atributo
+    -Entra-se um nome que será comparado e com base em sua comparação vai acrescentar em um ponto o certo atributo que no
+    caso é uma variável
+*/
+void Ficha::Attribute_bonus(string Attribute_)
+{
+    if (Attribute_ == "Vigor")
+    {
+        Vigor++;
+    }else if (Attribute_ == "Finesse")
+    {
+        Finesse++;
+    }else if (Attribute_ == "Argúcia")
+    {
+        Argucia++;
+    }else if (Attribute_ == "Determinação")
+    {
+        Determinacao++;
+    }else //Panache
+    {
+        Panache++;
+    }
+}
