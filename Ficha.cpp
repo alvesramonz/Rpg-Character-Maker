@@ -92,3 +92,53 @@ void Ficha::Create_campaign(string Campaign_name_)
         cout << "Arquivo indisponível! Tente novamente." << endl;
     }
 }
+
+/*      Character_name_verification()
+    Recebe um nome e o verifica com base na campanha se é possível a utilização do nome,
+    pois não é permitido dois nomes iguais numa mesma campanha.
+        Variaveis utilizadas:
+        -string Campaign_name_
+        -string Character_name_
+        -string Line
+        -int Verificador - É a saída da função para usar posteriormente em outras situações
+        -<arquivo> FileR - R de leitura, File do arquvio
+
+        Ps.: Character_name_verification ainda é void, mas posteriormente irá se tornar um int com retorno
+*/
+void Ficha::Character_name_verification(string Campaign_name_,string Character_name_)
+{
+    ifstream FileR;
+    string Line;
+    int Verificador = 0;
+
+    FileR.open(strcat(Campaign_name_, ".txt")); //Nome do arquivo da campanha que terá todos os personagens
+    if(FileR.is_open())
+    {
+        while(getline(FileR, Line))
+        {
+            if(Character_name_ == Line)
+            {
+                cout << "Nome de personagem já existe! Tente novamente." << endl;
+                //Interessante ter um retorno de inteiro para a saída da função
+                //Verificador = -1;
+            }
+        }
+            FileR.close();
+            if(Verificador >= 0)
+            {
+                cout << "Nome de personagem disponível para uso." << endl;
+                ofstream File;
+                File.open(strcat(Campaign_name_, ".txt"), ios::app);
+                if (File.is_open())
+                {
+                    File << Character_name_ << endl;
+                    File.close();
+                }else
+                {
+                    cout << "Arquivo indisponível! Tente novamente." << endl;
+                }
+                //Interessante ter um retorno de inteiro para a saída da função
+                //Verificador = 0;
+            }
+    }
+}
