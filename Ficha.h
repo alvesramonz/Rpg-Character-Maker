@@ -33,7 +33,10 @@ class Ficha
     int Determinacao = 2;   //Dúvida, não sei se posso definir valor em ".h"
     int Panache = 2;    //Dúvida, não sei se posso definir valor em ".h"
     //Fim dos atributos
-
+    //Formações
+    string FormationI;
+    string FormationII;
+    //Fim das formações
 };
 
 #endif
