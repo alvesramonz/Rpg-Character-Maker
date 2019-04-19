@@ -179,6 +179,25 @@ void Ficha::Create_character(string Character_name_)
 //Término das informações do personagem
 
 //Atributos
+    cout << "Começamos agora a parte dos atributos, mas antes..." << endl;
+    cout << "No sistema de 7o Mar está disponíveis 'DEZ' nações, sendo estas:" << endl;
+    //Tabela de nações e seus bônus
+    cout << "-Avalon -> +1 Panache OU +1 Determinação ()-Inishmore -> +1 Panache OU +1 Argúcia ()-As Terras Altas -> +1 Vigor OU +1 Finesse ()-Castilha -> +1 Finesse ou +1 Argúcia ()-Eisen -> +1 Vigor OU +1 Determinação ()-Montaigne -> +1 Finesse OU +1 Panache ()-Sarmácia -> +1 Vigor OU +1 Panache ()-Ussura -> +1 Determinação OU +1 Argúcia ()-Vesten -> +1 Vigor OU +1 Argúcia ()-Vodacce -> +1 Finesse OU +1 Determinação " << endl;
+    cout << "Digite a nação de seu personagem (Primeira letra maiuscula): " << endl;
+    getline(cin, Nation);
+    cout << "Agora escolhida nação é importante escolher qual dos bônus você deseja acrescentar em seus atributos (Ex.: +1 Panache, digite Panache): " << endl;
+    getline(cin, Attribute);
+    Attribute_bonus(Attribute);
+    cout << "Como regra de sistema agora escolha um atributo para aumentar em um ponto: " << endl;
+    getline(cin, Attribute);
+    Attribute_bonus(Attribute);
+    cout << "Como regra de sistema agora escolha outro atributo ou o mesmo anterior para aumentar em um ponto: " << endl;
+    getline(cin, Attribute);
+    Attribute_bonus(Attribute);
+        /*      Ficha_[i]-> Attribute_bonus(Attribute); 
+                Ps.: Possivelmente seja assim
+                Ps2.: Inclusão dos setters no fim.
+        */
 //Fim dos atributos
 
 //Formações
