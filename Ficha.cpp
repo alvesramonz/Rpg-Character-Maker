@@ -321,3 +321,175 @@ void Ficha::Expertise()
             Isso é para fazer o cálculo do gasto com base no seu valor atual de pontos para gastar*/
     } while (Pontos > 0);
 }
+
+/*      Expertise_calc()
+    Recebe a pericia e os pontos inicias(10) e vai subtraindo até ter 0
+    Pericias_ precisa ser "universal" para entrar nesse bloco, a não ser que seja Mirar que por si só já foi definida
+*/
+int Ficha::Expertise_calc(string Expertise_, int Pontos_)
+{
+    int Pontos_final;
+
+    if(Expertise_ == "Mirar")
+    {
+        if((Pontos_ - Mirar_) >= 0)
+        {
+            Mirar_++;
+            Pontos_final = Pontos_ - Mirar_; 
+            return Pontos_final;
+        }else
+        {
+            cout << "Não é possivel aumentar essa perícia!! Pontos insuficientes!!" << endl;
+        }
+    }else if (Expertise_ == "Atletismo")
+    {
+        if((Pontos_ - Atletismo_) >= 0)
+        {
+            Atletismo_++;
+            Pontos_final = Pontos_ - Atletismo_; 
+            return Pontos_final;
+
+        }else
+        {
+            cout << "Não é possivel aumentar essa perícia!! Pontos insuficientes!!" << endl;
+        }
+    }else if (Expertise_ == "Briga")
+    {
+        /* code */
+    }else if (Expertise_ == "Convencer")
+    {
+                if((Pontos_ - Convencer_) >= 0)
+        {
+            Convencer_++;
+            Pontos_final = Pontos_ - Convencer_; 
+            return Pontos_final;
+        }else
+        {
+            cout << "Não é possivel aumentar essa perícia!! Pontos insuficientes!!" << endl;
+        }
+    }else if (Expertise_ == "Empatia")
+    {
+        if((Pontos_ - Empatia_) >= 0)
+        {
+            Empatia_++;
+            Pontos_final = Pontos_ - Empatia_; 
+            return Pontos_final;
+        }else
+        {
+            cout << "Não é possivel aumentar essa perícia!! Pontos insuficientes!!" << endl;
+        }
+    }else if (Expertise_ == "Esconder")
+    {
+        if((Pontos_ - Esconder_) >= 0)
+        {
+            Esconder_++;
+            Pontos_final = Pontos_ - Esconder_; 
+            return Pontos_final;
+        }else
+        {
+            cout << "Não é possivel aumentar essa perícia!! Pontos insuficientes!!" << endl;
+        }
+    }else if (Expertise_ == "Intimidar")
+    {
+        if((Pontos_ - Intimidar_) >= 0)
+        {
+            Intimidar_++;
+            Pontos_final = Pontos_ - Intimidar_; 
+            return Pontos_final;
+        }else
+        {
+            cout << "Não é possivel aumentar essa perícia!! Pontos insuficientes!!" << endl;
+        }
+    }else if (Expertise_ == "Observar")
+    {
+        if((Pontos_ - Observar_) >= 0)
+        {
+            Observar_++;
+            Pontos_final = Pontos_ - Observar_; 
+            return Pontos_final;
+        }else
+    }else if (Expertise_ == "Atuar")
+    {
+        if((Pontos_ - Atuar_) >= 0)
+        {
+            Atuar_++;
+            Pontos_final = Pontos_ - Atuar_; 
+            return Pontos_final;
+        }else
+    }else if (Expertise_ == "Cavalgar")
+    {
+        if((Pontos_ - Cavalgar_) >= 0)
+        {
+            Cavalgar_++;
+            Pontos_final = Pontos_ - Cavalgar_; 
+            return Pontos_final;
+        }else
+    }else if (Expertise_ == "Navegar")
+    {
+        if((Pontos_ - Navegar_) >= 0)
+        {
+            Navegar_++;
+            Pontos_final = Pontos_ - Navegar_; 
+            return Pontos_final;
+        }else
+    }else if (Expertise_ == "Erudição")
+    {
+        if((Pontos_ - Erudição_) >= 0)
+        {
+            Erudição_++;
+            Pontos_final = Pontos_ - Erudição_; 
+            return Pontos_final;
+        }else
+    }else if (Expertise_ == "Seduzir")
+    {
+        if((Pontos_ - Seduzir_) >= 0)
+        {
+            Seduzir_++;
+            Pontos_final = Pontos_ - Seduzir_; 
+            return Pontos_final;            return Pontos_final;
+        }else
+    }else if (Expertise_ == "Furto")
+    {
+        if((Pontos_ - Furto_) >= 0)
+        {
+            Furto_++;
+            Pontos_final = Pontos_ - Furto_; 
+            return Pontos_final;
+        }else
+    }else if (Expertise_ == "Arte da guerra")
+    {
+        if((Pontos_ - Arte_da_Guerra_) >= 0)
+        {
+            Arte_da_Guerra_++;
+            Pontos_final = Pontos_ - Arte_da_Guerra_; 
+            return Pontos_final;
+        }else
+    }else if (Expertise_ == "Armas")
+    {
+        if((Pontos_ - Armas_) >= 0)
+        {
+            Armas_++;
+            Pontos_final = Pontos_ - Armas_; 
+            return Pontos_final;
+        }else
+    }else
+    {
+        cout << "Nome da perícia digitada está incorreto." << endl;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
