@@ -6,7 +6,7 @@
     -Cabeçalho de exposição de todas as profissões já com suas respectivas pericias e vantagens -> (Professions)
 
     Ps.: Interessante acrescentar aqui nesse número de versão sempre que atualizado ou commitado por nós. 
-    Ps.: V0.2
+    Ps.: V0.5
 */
 
 #include <iostream>
