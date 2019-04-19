@@ -254,3 +254,16 @@ void Ficha::Attribute_bonus(string Attribute_)
         Panache++;
     }
 }
+
+/*  Depois do cabeçalho Profession() ser feito é que da inicio a esta função
+*/
+void Ficha::Expertise_from_profession(string Formation_)
+{
+    if (/* condition */)
+    {
+        /* Espiar++ */
+    }else if (/* condition */)
+    {
+        /* code */
+    }
+}
