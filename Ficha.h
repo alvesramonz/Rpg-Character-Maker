@@ -24,7 +24,15 @@ class Ficha
     string Religion;
     string Reputation;
     int Richness;
-
+    //Fim das informações do personagem
+    //Atributo
+    string Attribute;
+    int Vigor = 2;  //Dúvida, não sei se posso definir valor em ".h"
+    int Finesse = 2;    //Dúvida, não sei se posso definir valor em ".h"
+    int Argucia = 2;    //Dúvida, não sei se posso definir valor em ".h"
+    int Determinacao = 2;   //Dúvida, não sei se posso definir valor em ".h"
+    int Panache = 2;    //Dúvida, não sei se posso definir valor em ".h"
+    //Fim dos atributos
 
 };
 
