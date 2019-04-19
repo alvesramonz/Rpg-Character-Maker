@@ -142,3 +142,38 @@ void Ficha::Character_name_verification(string Campaign_name_,string Character_n
             }
     }
 }
+
+/*      Create_character()
+    Recebe um nome de personagem, após ter ocorrido uma verificação no uso do nome na campanha e um nome de jogador.
+    Ou seja dentro da campanha não pode haver outro personagem de mesmo nome. Essa etapa é responsável
+    pelo armazenamento das informações do personagem, atributos, perícias, vantagens e arcanas do jogador.
+    Tudo incluso em um arquivo único "Personagem.txt" já com formatação
+
+    Ps.: Necessitando ainda da inclusão do construtos e possivel mudança dos nomes para os seus respectivos
+    setters;
+    Ps2.: Suposta e futura necessidade de um indice na entrada da função.
+*/
+void Ficha::Create_character(string Character_name_) 
+{
+    ofstream File;
+    File.open(strcat(Character_name_, ".txt"), ios::app);
+
+//Informações do Personagem
+//Término das informações do personagem
+
+//Atributos
+//Fim dos atributos
+
+//Formações
+//Fim das formações
+
+//Perícias
+
+//Fim das perícias
+//Vantagens
+
+//Fim das vantagens
+//Arcana
+
+//Fim da arcana
+}
