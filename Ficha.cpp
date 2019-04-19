@@ -159,6 +159,23 @@ void Ficha::Create_character(string Character_name_)
     File.open(strcat(Character_name_, ".txt"), ios::app);
 
 //Informações do Personagem
+    cout << "A partir de agora será feito o registro das informações do personagem, fique atento!" << endl;
+    cout << "É muito importante que antes de fazer essa etapa o jogador já tenha em mente como será seu personagem." << endl;
+    cout << "Digite o nome do jogador: " << endl;
+    getline(cin, Player_name);
+    //cout << "Digite o nome do personagem: " << endl; Não precisa, pois já se recebe
+    cout << "Digite uma frase curta que defina seu personagem, ou seja, seu conceito: " << endl;
+    getline(cin, Concept);
+    cout << "Digite a religião de seu personagem (caso não tenha digite Ateu, mas religião é muito importante): " << endl;
+    getline(cin, Religion);
+    cout << "Digite se seu personagem possui reputação, caso não tenha digite 'SEM': " << endl;
+    getline(cin, Reputation);
+    cout << "Digite quanto é sua riqueza, ou seja, o valor sua perícia mais alta: " << endl;
+    cin >> Richness;
+        /*
+        Ficha_[i]-> setRichness(Richness)
+        Ps.: Ficha_[i] é a classe de cada ficha criada de 7o Mar
+        */
 //Término das informações do personagem
 
 //Atributos
