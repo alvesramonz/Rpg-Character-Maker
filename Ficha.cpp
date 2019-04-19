@@ -66,3 +66,29 @@ void Ficha::Campaign_verification()
                 //Interessante ter um retorno de inteiro para a saída da função (Verificador)
                 //Return Verificador;
 }
+
+/*      Create_campaign()
+    Criação de um arquivo com todas as campanhas de UM sistema utilizando "ios::app" para incluir sempre
+    as campanhas e não as sobrescrever
+        Variaveis utilizadas:
+        -string Campaign_name 
+        -<arquivo> File - nesse caso sendo escrito
+*/
+void Ficha::Create_campaign(string Campaign_name_)
+{    
+    ofstream File;
+
+    File.open("CampanhasMar.txt", ios::app);
+        strcat(Campaign_name_,".txt"); //Criação de um arquivo "NomeDaCampanha.txt" 
+                                     //para a campanha em específica.
+
+    if (File.is_open())
+    {
+        File << Campaign_name_ << endl;
+        //Possivel modificação futura para utilização do strtok
+        File.close();
+    }else
+    {
+        cout << "Arquivo indisponível! Tente novamente." << endl;
+    }
+}
