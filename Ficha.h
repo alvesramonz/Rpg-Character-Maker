@@ -45,6 +45,12 @@ class Ficha
     //Construtor
     //Destrutor
     //Getters
+        //Atributos
+    int getVigor();
+    int getFinesse();
+    int getArgucia();
+    int getDeterminacao();
+    int getPanache();
     //Fim dos Getters
     //Setters
     //Fim dos Setters
