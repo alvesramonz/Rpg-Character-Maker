@@ -63,6 +63,8 @@ class Ficha
     void Character_name_verification(string Campaign_name_,string Character_name_);
     void Create_character(string Character_name_);
 
+    void Attribute_bonus(string Attribute_);
+
 
 };
 
