@@ -37,6 +37,10 @@ class Ficha
     string FormationI;
     string FormationII;
     //Fim das formações
+    //Perícias
+    int Mirar, Atletismo, Briga, Convencer, Empatia, Esconder, Intimidar, Obversar = 0; //Dúvida, não sei se posso definir valor em ".h"
+    int Atuar, Cavalgar, Navegar, Erudicao, Seduzir, Furto, Arte_da_Guerra, Armas = 0;  //Dúvida, não sei se posso definir valor em ".h"
+    //Fim das parícias
 };
 
 #endif
