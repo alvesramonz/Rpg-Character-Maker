@@ -65,6 +65,9 @@ class Ficha
 
     void Attribute_bonus(string Attribute_);
 
+    void Expertise_from_profession(string Profession_);
+
+
 
 };
 
