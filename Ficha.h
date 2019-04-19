@@ -58,6 +58,8 @@ class Ficha
     //Setters
     //Fim dos Setters
     //Funções diversas
+    void Campaign_verification();
+
 };
 
 #endif
