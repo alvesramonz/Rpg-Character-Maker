@@ -60,6 +60,7 @@ class Ficha
     //Funções diversas
     void Campaign_verification();
     void Create_campaign(string Campaign_name_);
+    void Character_name_verification(string Campaign_name_,string Character_name_);
 
 };
 
