@@ -267,3 +267,57 @@ void Ficha::Expertise_from_profession(string Formation_)
         /* code */
     }
 }
+
+/*      Expertise()
+   Problema em relação a dúvida entre: Por getPericia() ou simplesmente por a Pericia
+   Ps.: Vai receber um indice para a Ficha_[i]
+*/
+void Ficha::Expertise()
+{
+    int Pontos = 10;
+    string Expertise_;
+
+    do
+    {   
+        cout << "Voce possui > " << Pontos << " < pontos para gastar em perícias." << endl;
+        cout << "A seguir haverá a tabela da suas atuais perícias advindas de suas formações e perícias já aumentadas." << endl;
+        cout << "Para aumenta-las (pericias) verifique se o custo delas está de acordo com seus pontos restante: Custo = NívelAtual + 1" << endl;
+        /*  //Tabela de conversão getPericia() -> Pericia_
+            int Mirar_ = Ficha_[i]->getMirar();
+            int Atletismo_ = Ficha_[i]->getAtletismo();
+            int Briga_ = Ficha_[i]->getBriga();
+            int Convencer_ = Ficha_[i]->getConvencer();
+            int Empatia_ = Ficha_[i]->getEmpatia();
+            int Esconder_ = Ficha_[i]->getEsconder();
+            int Intimidar_ = Ficha_[i]->getIntimidar();
+            int Observar_ = Ficha_[i]->getObversar();
+            int Atuar_ = Ficha_[i]->getAtuar();
+            int Cavalgar_ = Ficha_[i]->getCavalgar();
+            int Navegar_ = Ficha_[i]->getNavegar();
+            int Erudição_ = Ficha_[i]->getErudicao();
+            int Seduzir_ = Ficha_[i]->getSeduzir();
+            int Furto_ = Ficha_[i]->getFurto();
+            int Arte_da_Guerra_ = Ficha_[i]->getArte_da_Guerra();
+            int Armas_ = Ficha_[i]->getArmas();
+            //Fim da tabela      
+        */
+       
+          //Tabela de perícias
+            cout << "|-MIRAR:  " << getMirar() <<"/t/t"<< "-ATUAR:  " << getAtuar() << "|" << endl;
+            cout << "|-ATLETISMO:  " << getAtletismo() <<"/t/t"<< "-CAVALGAR:  " << getCavalgar() << "|" << endl;
+            cout << "|-BRIGA:  " << getBriga() <<"/t/t"<< "-NAVEGAR:  " << getNavegar() << "|" << endl;
+            cout << "|-CONVENCER:  " << getConvencer() <<"/t/t"<< "-ERUDIÇÃO:  " << getErudicao() << "|" << endl;
+            cout << "|-EMPATIA:  " << getEmpatia() <<"/t/t"<< "-SEDUZIR:  " << getSeduzir() << "|" << endl;
+            cout << "|-ESCONDER:  " << getEsconder() <<"/t/t"<< "-FURTO:  " << getFurto() << "|" << endl;
+            cout << "|-INTIMIDAR:  " << getIntimidar() <<"/t/t"<< "-ARTE DA GUERRA:  " << getArte_da_Guerra() << "|" << endl;
+            cout << "|-OBERSERVAR:  " << getObservar() <<"/t/t"<< "-ARMAS:  " << getArmas() << "|" << endl;
+            //Fim da tabela
+        
+        cout << "Escolha sua perícia para aumentar: " << endl;
+        getline(cin,Expertise_);
+        Pontos = Ficha_[i]->Expertise_calc(Expertise_, Pontos);
+
+        /*      Pontos - Ficha_[i]-> getMirar() 
+            Isso é para fazer o cálculo do gasto com base no seu valor atual de pontos para gastar*/
+    } while (Pontos > 0);
+}
