@@ -40,3 +40,26 @@ void Choose_system()
     cout << "     |       > Sair                                      |" << endl;
     cout << "     |___________________________________________________|" << endl; 
 }
+
+void Sea_menu()
+{
+    cout << "      ___________________________________________________ " << endl;
+    cout << "     |                                                   |" << endl;  
+    cout << "     |       Sistema: 7o Mar (Segunda Edição)            |" << endl;  
+    cout << "     |                                                   |" << endl;  
+    cout << "     |       > Adicionar campanha (Mestre)               |" << endl;  
+    cout << "     |       > Criação de ficha                          |" << endl;  
+    cout << "     |       > Criação de Vilão/Monstro (Mestre)         |" << endl;  
+    cout << "     |       > Apagar ficha                              |" << endl;  
+    cout << "     |       > Listar fichas                             |" << endl;  
+    cout << "     |       > Listar fichas p/Jogador                   |" << endl; 
+    cout << "     |       > Listar fichas p/Campanha                  |" << endl;
+    cout << "     |       > Listar fichas do mestre (Mestre)          |" << endl;
+    cout << "     |       > Buscar ficha                              |" << endl;
+    cout << "     |       > Voltar para escolha de sistema            |" << endl; 
+    cout << "     |       > Opções                                    |" << endl;
+    cout << "     |       > Limpar tela                               |" << endl;
+    cout << "     |       > Ajuda                                     |" << endl; 
+    cout << "     |       > Sair                                      |" << endl;
+    cout << "     |___________________________________________________|" << endl;
+}
