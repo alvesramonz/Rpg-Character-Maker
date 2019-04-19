@@ -63,3 +63,8 @@ void Sea_menu()
     cout << "     |       > Sair                                      |" << endl;
     cout << "     |___________________________________________________|" << endl;
 }
+
+void Professions()
+{
+
+}
