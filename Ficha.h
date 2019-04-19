@@ -14,6 +14,15 @@ using namespace std;
 
 class Ficha
 {
+    private:
+    //Informações do personagem
+    string Campaign_name;
+    string Character_name;
+    string Player_name;
+    string Concept;
+    string Nation;
+    string Religion;
+    string Reputation;
 
 
 };
