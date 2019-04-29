@@ -66,5 +66,65 @@ void Sea_menu()
 
 void Professions()
 {
-
+    cout << "      ___________________________________________________ " << endl;
+    cout << "     |                                                   |" << endl;  
+    cout << "     |       Sistema: 7o Mar (Segunda Edição)            |" << endl;  
+    cout << "     |                                                   |" << endl;  
+    cout << "     |       > FORMAÇÕES BÁSICAS                         |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |       > ATOR                                      |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl;  
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl;  
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |                                                   |" << endl; 
+    cout << "     |___________________________________________________|" << endl;
 }
