@@ -259,9 +259,10 @@ void Ficha::Attribute_bonus(string Attribute_)
 */
 void Ficha::Expertise_from_profession(string Formation_)
 {
-    if (/* condition */)
+    if (Formation == "Ator")
     {
-        /* Espiar++ */
+        Atletismo++;        Empatia++;        Atuar++;        Seduzir++;        Furto++;  
+        
     }else if (/* condition */)
     {
         /* code */
