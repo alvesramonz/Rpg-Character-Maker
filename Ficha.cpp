@@ -356,7 +356,15 @@ int Ficha::Expertise_calc(string Expertise_, int Pontos_)
         }
     }else if (Expertise_ == "Briga")
     {
-        /* code */
+        if((Pontos_ - Briga_) >= 0)
+        {
+            Briga_++;
+            Pontos_final = Pontos_ - Briga_; 
+            return Pontos_final;
+        }else
+        {
+            cout << "Não é possivel aumentar essa perícia!! Pontos insuficientes!!" << endl;
+        }
     }else if (Expertise_ == "Convencer")
     {
                 if((Pontos_ - Convencer_) >= 0)
@@ -409,6 +417,9 @@ int Ficha::Expertise_calc(string Expertise_, int Pontos_)
             Pontos_final = Pontos_ - Observar_; 
             return Pontos_final;
         }else
+        {
+            cout << "Não é possivel aumentar essa perícia!! Pontos insuficientes!!" << endl;
+        }    
     }else if (Expertise_ == "Atuar")
     {
         if((Pontos_ - Atuar_) >= 0)
@@ -417,6 +428,9 @@ int Ficha::Expertise_calc(string Expertise_, int Pontos_)
             Pontos_final = Pontos_ - Atuar_; 
             return Pontos_final;
         }else
+        {
+            cout << "Não é possivel aumentar essa perícia!! Pontos insuficientes!!" << endl;
+        }      
     }else if (Expertise_ == "Cavalgar")
     {
         if((Pontos_ - Cavalgar_) >= 0)
@@ -425,6 +439,9 @@ int Ficha::Expertise_calc(string Expertise_, int Pontos_)
             Pontos_final = Pontos_ - Cavalgar_; 
             return Pontos_final;
         }else
+        {
+            cout << "Não é possivel aumentar essa perícia!! Pontos insuficientes!!" << endl;
+        }            
     }else if (Expertise_ == "Navegar")
     {
         if((Pontos_ - Navegar_) >= 0)
@@ -433,6 +450,9 @@ int Ficha::Expertise_calc(string Expertise_, int Pontos_)
             Pontos_final = Pontos_ - Navegar_; 
             return Pontos_final;
         }else
+        {
+            cout << "Não é possivel aumentar essa perícia!! Pontos insuficientes!!" << endl;
+        }            
     }else if (Expertise_ == "Erudição")
     {
         if((Pontos_ - Erudição_) >= 0)
@@ -441,6 +461,9 @@ int Ficha::Expertise_calc(string Expertise_, int Pontos_)
             Pontos_final = Pontos_ - Erudição_; 
             return Pontos_final;
         }else
+        {
+            cout << "Não é possivel aumentar essa perícia!! Pontos insuficientes!!" << endl;
+        }           
     }else if (Expertise_ == "Seduzir")
     {
         if((Pontos_ - Seduzir_) >= 0)
@@ -449,6 +472,9 @@ int Ficha::Expertise_calc(string Expertise_, int Pontos_)
             Pontos_final = Pontos_ - Seduzir_; 
             return Pontos_final;            return Pontos_final;
         }else
+        {
+            cout << "Não é possivel aumentar essa perícia!! Pontos insuficientes!!" << endl;
+        }            
     }else if (Expertise_ == "Furto")
     {
         if((Pontos_ - Furto_) >= 0)
@@ -457,6 +483,9 @@ int Ficha::Expertise_calc(string Expertise_, int Pontos_)
             Pontos_final = Pontos_ - Furto_; 
             return Pontos_final;
         }else
+        {
+            cout << "Não é possivel aumentar essa perícia!! Pontos insuficientes!!" << endl;
+        }            
     }else if (Expertise_ == "Arte da guerra")
     {
         if((Pontos_ - Arte_da_Guerra_) >= 0)
@@ -465,6 +494,9 @@ int Ficha::Expertise_calc(string Expertise_, int Pontos_)
             Pontos_final = Pontos_ - Arte_da_Guerra_; 
             return Pontos_final;
         }else
+        {
+            cout << "Não é possivel aumentar essa perícia!! Pontos insuficientes!!" << endl;
+        }            
     }else if (Expertise_ == "Armas")
     {
         if((Pontos_ - Armas_) >= 0)
@@ -473,6 +505,9 @@ int Ficha::Expertise_calc(string Expertise_, int Pontos_)
             Pontos_final = Pontos_ - Armas_; 
             return Pontos_final;
         }else
+        {
+            cout << "Não é possivel aumentar essa perícia!! Pontos insuficientes!!" << endl;
+        }            
     }else
     {
         cout << "Nome da perícia digitada está incorreto." << endl;
