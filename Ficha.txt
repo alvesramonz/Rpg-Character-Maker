@@ -4,7 +4,7 @@
     personagem, formações, atributos, perícias, vantagens e que ainda falta encaixar em algum espaço
     arcana e espiral da morte.
 
-    Ps.: Versão 0.1 da ficha
+    Ps.: Versão 0.2 da ficha
 */
 
 _________________________________________________________________________
