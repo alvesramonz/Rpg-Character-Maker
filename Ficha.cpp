@@ -158,7 +158,136 @@ return converted;
         }
     //Fim das Pericias
 //Fim dos getters
-
+//Setters
+    //Informações
+        void Ficha::getCharacter_name(string Character_name_)
+        {
+            Character_name = Character_name_;
+        }
+        void Ficha::getPlayer_name(string Player_name_)
+        {
+            Player_name = Player_name_;
+        }
+        void Ficha::getConcept(string Concept_)
+        {
+            Concept = Concept_;
+        }
+        void Ficha::getNation(string Nation_)
+        {
+            Nation = Nation_;
+        }
+        void Ficha::getReligion(string Religion_)
+        {
+            Religion = Religion_;
+        }
+        void Ficha::getReputation(string Reputation_) 
+        {
+            Reputation = Reputation_;
+        }
+        void Ficha::getRichness(int Richness_)
+        {
+            Richness = Richness_;
+        }
+    //Fim das Informações
+    //Formações
+        void Ficha::getFormationI(string FormationI_)
+        {
+            FormationI = FormationI_;
+        }
+        void Ficha::getFormationII(string FormationII_)
+        {
+            FormationII = FormationII_;
+        }
+    //Fim das Formações
+    //Atributos
+        void Ficha::getVigor(int Vigor_)
+        {
+            Vigor = Vigor_
+        }
+        void Ficha::getFinesse(int Finesse_)
+        {
+            Finesse = Finesse_;
+        }
+        void Ficha::getArgucia(int Argucia_)
+        {
+             Argucia = Argucia_;
+        }
+        void Ficha::getDeterminacao(int Determinacao_)
+        {
+             Determinacao = Determinacao_;
+        }
+        void Ficha::getPanache(int Panache_)
+        {
+             Panache = Panache_;
+        }
+    //Fim dos Atributos
+    //Perícias
+        void Ficha::getMirar(int Mirar_)
+        {
+            Mirar = Mirar_;
+        }
+        void Ficha::getAtletismo(int Atletismo_)
+        {
+            Atletismo = Atletismo_;
+        }
+        void Ficha::getBriga(int Briga_)
+        {
+            Briga = Briga_;
+        }
+        void Ficha::getConvencer(int Convencer_)
+        {
+            Convencer = Convencer_;
+        }
+        void Ficha::getEmpatia(int Empatia_)
+        {
+            Empatia = Empatia_;
+        }
+        void Ficha::getEsconder(int Esconder_)
+        {
+            Esconder = Esconder_;
+        }
+        void Ficha::getIntimidar(int Intimidar_)
+        {
+            Intimidar = Intimidar_;
+        }
+        void Ficha::getObservar(int Observar_)
+        {
+            Observar = Observar_;
+        }
+        void Ficha::getAtuar(int Atuar_)
+        {
+            Atuar = Atuar_;
+        }
+        void Ficha::getCavalgar(int Cavalgar_)
+        {
+            Cavalgar = Cavalgar_;
+        }
+        void Ficha::getNavegar(int Navegar_)
+        {
+            Navegar = Navegar_;
+        }
+        void Ficha::getErudicao(int Erudicao_)
+        {
+            Erudicao = Erudicao_;
+        }
+        void Ficha::getSeduzir(int Seduzir_)
+        {
+            Seduzir = Seduzir_;
+        }
+        void Ficha::getFurto(int Furto_)
+        {
+            Furto = Furto_;
+        }
+        void Ficha::getArte_da_Guerra(int Arte_da_Guerra_)
+        {
+            Arte_da_Guerra = Arte_da_Guerra_;
+        }
+        void Ficha::getArmas(int Armas_)
+        {
+            Armas = Armas_;
+        }
+    //Fim das Pericias
+//Fim dos Setters
 /*      Create_character()
     Recebe um nome de personagem, após ter ocorrido uma verificação no uso do nome na campanha e um nome de jogador.
     Ou seja dentro da campanha não pode haver outro personagem de mesmo nome. Essa etapa é responsável
@@ -180,7 +309,7 @@ void Ficha::Create_character(string Character_name_)
     cout << "É muito importante que antes de fazer essa etapa o jogador já tenha em mente como será seu personagem." << endl;
     cout << "Digite o nome do jogador: " << endl;
     cin.ignore();
-    getline(cin, Player_name);
+    getline(cin, Player_name);//Mudar o Player_name para um tipo de setPlayer_name
     cout << "Digite uma frase curta que defina seu personagem, ou seja, seu conceito: " << endl;
     getline(cin, Concept);
     cout << "Digite a religião de seu personagem (caso não tenha digite Ateu, mas religião é muito importante): " << endl;
@@ -201,6 +330,7 @@ void Ficha::Create_character(string Character_name_)
     //Tabela de nações e seus bônus
     cout << "-Avalon -> +1 Panache OU +1 Determinação ()-Inishmore -> +1 Panache OU +1 Argúcia ()-As Terras Altas -> +1 Vigor OU +1 Finesse ()-Castilha -> +1 Finesse ou +1 Argúcia ()-Eisen -> +1 Vigor OU +1 Determinação ()-Montaigne -> +1 Finesse OU +1 Panache ()-Sarmácia -> +1 Vigor OU +1 Panache ()-Ussura -> +1 Determinação OU +1 Argúcia ()-Vesten -> +1 Vigor OU +1 Argúcia ()-Vodacce -> +1 Finesse OU +1 Determinação " << endl;
     cout << "Digite a nação de seu personagem (Primeira letra maiuscula): " << endl;
+    cin.ignore();
     getline(cin, Nation);
     cout << "Agora escolhida nação é importante escolher qual dos bônus você deseja acrescentar em seus atributos (Ex.: +1 Panache, digite Panache): " << endl;
     getline(cin, Attribute);
