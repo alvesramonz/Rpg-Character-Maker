@@ -283,7 +283,6 @@ int Rpg_System::Character_name_verification(string Campaign_name_,string Charact
                 {
                     cout << "Arquivo indisponível! Tente novamente." << endl;
                 }
-                //Interessante ter um retorno de inteiro para a saída da função
             }
     }
                 return Verificador;
