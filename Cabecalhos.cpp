@@ -10,9 +10,11 @@
 */
 
 #include <iostream>
+#include "Cabecalhos.h"
+
 using namespace std;
 
-void Presentation()
+void Cabecalhos::Presentation()
 {
     cout << "      ___________________________________________________ "  << endl;
     cout << "     |                                                   |" << endl;
@@ -28,43 +30,44 @@ void Presentation()
     cout << "     |___________________________________________________|" << endl;
 }
 
-void Choose_system()
+void Cabecalhos::Choose_system()
 {
     cout << "      ___________________________________________________ " << endl;
     cout << "     |                                                   |" << endl; 
     cout << "     |       Para prosseguir escolha seu sistema:        |" << endl; 
     cout << "     |                                                   |" << endl; 
-    cout << "     |       > Tormenta (Rpg)                            |" << endl; 
-    cout << "     |       > 7o Mar (2a Edição)                        |" << endl; 
+    cout << "     |     [1] Tormenta (Rpg)                            |" << endl; 
+    cout << "     |     [2] 7o Mar (2a Edição)                        |" << endl; 
     cout << "     |                                                   |" << endl;
     cout << "     |       > Sair                                      |" << endl;
     cout << "     |___________________________________________________|" << endl; 
 }
 
-void Sea_menu()
+void Cabecalhos::Sea_menu()
 {
     cout << "      ___________________________________________________ " << endl;
     cout << "     |                                                   |" << endl;  
     cout << "     |       Sistema: 7o Mar (Segunda Edição)            |" << endl;  
     cout << "     |                                                   |" << endl;  
-    cout << "     |       > Adicionar campanha (Mestre)               |" << endl;  
-    cout << "     |       > Criação de ficha                          |" << endl;  
-    cout << "     |       > Criação de Vilão/Monstro (Mestre)         |" << endl;  
-    cout << "     |       > Apagar ficha                              |" << endl;  
-    cout << "     |       > Listar fichas                             |" << endl;  
-    cout << "     |       > Listar fichas p/Jogador                   |" << endl; 
-    cout << "     |       > Listar fichas p/Campanha                  |" << endl;
-    cout << "     |       > Listar fichas do mestre (Mestre)          |" << endl;
-    cout << "     |       > Buscar ficha                              |" << endl;
-    cout << "     |       > Voltar para escolha de sistema            |" << endl; 
-    cout << "     |       > Opções                                    |" << endl;
-    cout << "     |       > Limpar tela                               |" << endl;
-    cout << "     |       > Ajuda                                     |" << endl; 
-    cout << "     |       > Sair                                      |" << endl;
+    cout << "     |       [1] Adicionar campanha (Mestre)             |" << endl;  
+    cout << "     |       [2] Criação de ficha                        |" << endl;  
+    cout << "     |       [3] Criação de Vilão/Monstro (Mestre)       |" << endl;  
+    cout << "     |       [4] Apagar ficha                            |" << endl;  
+    cout << "     |       [5] Listar fichas                           |" << endl;  
+    cout << "     |       [6] Listar fichas p/Jogador                 |" << endl; 
+    cout << "     |       [7] Listar fichas p/Campanha                |" << endl;
+    cout << "     |       [8] Listar fichas do mestre (Mestre)        |" << endl;
+    cout << "     |       [9] Buscar ficha                            |" << endl;
+    cout << "     |      [10] Voltar para escolha de sistema          |" << endl; 
+    cout << "     |      [11] Opções                                  |" << endl;
+    cout << "     |      [12] Limpar tela                             |" << endl;
+    cout << "     |      [13] Ajuda                                   |" << endl; 
+    cout << "     |       [0] Sair                                    |" << endl;
     cout << "     |___________________________________________________|" << endl;
+    cout << "      Seu comando: ";
 }
 
-void Professions()
+void Cabecalhos::Professions()
 {
     cout << "      ___________________________________________________ " << endl;
     cout << "     |                                                   |" << endl;  
@@ -173,7 +176,7 @@ void Professions()
     cout << "     |___________________________________________________|" << endl;
 }
 
-void Advantages()
+void Cabecalhos::Advantages()
 {
     cout << "      ___________________________________________________ " << endl;
     cout << "     |                                                   |" << endl;  
