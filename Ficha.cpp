@@ -160,129 +160,129 @@ return converted;
 //Fim dos getters
 //Setters
     //Informações
-        void Ficha::getCharacter_name(string Character_name_)
+        void Ficha::setCharacter_name(string Character_name_)
         {
             Character_name = Character_name_;
         }
-        void Ficha::getPlayer_name(string Player_name_)
+        void Ficha::setPlayer_name(string Player_name_)
         {
             Player_name = Player_name_;
         }
-        void Ficha::getConcept(string Concept_)
+        void Ficha::setConcept(string Concept_)
         {
             Concept = Concept_;
         }
-        void Ficha::getNation(string Nation_)
+        void Ficha::setNation(string Nation_)
         {
             Nation = Nation_;
         }
-        void Ficha::getReligion(string Religion_)
+        void Ficha::setReligion(string Religion_)
         {
             Religion = Religion_;
         }
-        void Ficha::getReputation(string Reputation_) 
+        void Ficha::setReputation(string Reputation_) 
         {
             Reputation = Reputation_;
         }
-        void Ficha::getRichness(int Richness_)
+        void Ficha::setRichness(int Richness_)
         {
             Richness = Richness_;
         }
     //Fim das Informações
     //Formações
-        void Ficha::getFormationI(string FormationI_)
+        void Ficha::setFormationI(string FormationI_)
         {
             FormationI = FormationI_;
         }
-        void Ficha::getFormationII(string FormationII_)
+        void Ficha::setFormationII(string FormationII_)
         {
             FormationII = FormationII_;
         }
     //Fim das Formações
     //Atributos
-        void Ficha::getVigor(int Vigor_)
+        void Ficha::setVigor(int Vigor_)
         {
-            Vigor = Vigor_
+            Vigor = Vigor_;
         }
-        void Ficha::getFinesse(int Finesse_)
+        void Ficha::setFinesse(int Finesse_)
         {
             Finesse = Finesse_;
         }
-        void Ficha::getArgucia(int Argucia_)
+        void Ficha::setArgucia(int Argucia_)
         {
              Argucia = Argucia_;
         }
-        void Ficha::getDeterminacao(int Determinacao_)
+        void Ficha::setDeterminacao(int Determinacao_)
         {
              Determinacao = Determinacao_;
         }
-        void Ficha::getPanache(int Panache_)
+        void Ficha::setPanache(int Panache_)
         {
              Panache = Panache_;
         }
     //Fim dos Atributos
     //Perícias
-        void Ficha::getMirar(int Mirar_)
+        void Ficha::setMirar(int Mirar_)
         {
             Mirar = Mirar_;
         }
-        void Ficha::getAtletismo(int Atletismo_)
+        void Ficha::setAtletismo(int Atletismo_)
         {
             Atletismo = Atletismo_;
         }
-        void Ficha::getBriga(int Briga_)
+        void Ficha::setBriga(int Briga_)
         {
             Briga = Briga_;
         }
-        void Ficha::getConvencer(int Convencer_)
+        void Ficha::setConvencer(int Convencer_)
         {
             Convencer = Convencer_;
         }
-        void Ficha::getEmpatia(int Empatia_)
+        void Ficha::setEmpatia(int Empatia_)
         {
             Empatia = Empatia_;
         }
-        void Ficha::getEsconder(int Esconder_)
+        void Ficha::setEsconder(int Esconder_)
         {
             Esconder = Esconder_;
         }
-        void Ficha::getIntimidar(int Intimidar_)
+        void Ficha::setIntimidar(int Intimidar_)
         {
             Intimidar = Intimidar_;
         }
-        void Ficha::getObservar(int Observar_)
+        void Ficha::setObservar(int Observar_)
         {
             Observar = Observar_;
         }
-        void Ficha::getAtuar(int Atuar_)
+        void Ficha::setAtuar(int Atuar_)
         {
             Atuar = Atuar_;
         }
-        void Ficha::getCavalgar(int Cavalgar_)
+        void Ficha::setCavalgar(int Cavalgar_)
         {
             Cavalgar = Cavalgar_;
         }
-        void Ficha::getNavegar(int Navegar_)
+        void Ficha::setNavegar(int Navegar_)
         {
             Navegar = Navegar_;
         }
-        void Ficha::getErudicao(int Erudicao_)
+        void Ficha::setErudicao(int Erudicao_)
         {
             Erudicao = Erudicao_;
         }
-        void Ficha::getSeduzir(int Seduzir_)
+        void Ficha::setSeduzir(int Seduzir_)
         {
             Seduzir = Seduzir_;
         }
-        void Ficha::getFurto(int Furto_)
+        void Ficha::setFurto(int Furto_)
         {
             Furto = Furto_;
         }
-        void Ficha::getArte_da_Guerra(int Arte_da_Guerra_)
+        void Ficha::setArte_da_Guerra(int Arte_da_Guerra_)
         {
             Arte_da_Guerra = Arte_da_Guerra_;
         }
-        void Ficha::getArmas(int Armas_)
+        void Ficha::setArmas(int Armas_)
         {
             Armas = Armas_;
         }
