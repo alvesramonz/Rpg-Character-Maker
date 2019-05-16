@@ -69,6 +69,27 @@ class Ficha
     int getAtuar(), getCavalgar(), getNavegar(), getErudicao(), getSeduzir(), getFurto(), getArte_da_Guerra(), getArmas();
     //Fim dos Getters
     //Setters
+    void setMirar(int Mirar_), setAtletismo(int Atletismo_), setBriga(int Brigar_), setConvencer(int Convencer_), setEmpatia(int Empatia_), setEsconder	 (int Esconder_), setIntimidar(int Intimidar_), setObservar(int Observar_);
+    void setAtuar(int Atuar_), setCavalgar(int Cavalgar_), setNavegar(int Navegar_), setErudicao(int Erudicao_), setSeduzir(int Seduzir_), setFurto(int Furto_), setArte_da_Guerra(int Arte_da_Guerra_), setArmas(int Armas_);
+
+    void setVigor(int Vigor_);
+    void setFinesse(int Finesse_);
+    void setArgucia(int Argucia_);
+    void setDeterminacao(int Determinacao_);
+    void setPanache(int Panache_);
+
+    void setFormationI(string FormationI_);
+    void setFormationII(string FormationII_);
+
+    void setCampaign_name(string Campaign_name_);
+    void setCharacter_name(string Character_name_);
+    void setPlayer_name(string Player_name_);
+    void setConcept(string Concept_);
+    void setNation(string Nation_);
+    void setReligion(string Religion_);
+    void setReputation(string Reputation_);
+    void setRichness(int Richness);
+	
     //Fim dos Setters
     //Funções diversas
     int Character_name_verification(string Campaign_name_,string Character_name_);
