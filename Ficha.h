@@ -16,7 +16,7 @@ class Ficha
 {
     private:
     //Informações do personagem
-    string Campaign_name;
+    /*string Campaign_name;*/
     string Character_name;
     string Player_name;
     string Concept;
@@ -38,19 +38,32 @@ class Ficha
     string FormationII;
     //Fim das formações
     //Perícias
-    int Mirar, Atletismo, Briga, Convencer, Empatia, Esconder, Intimidar, Obversar = 0; //Dúvida, não sei se posso definir valor em ".h"
+    int Mirar, Atletismo, Briga, Convencer, Empatia, Esconder, Intimidar, Observar = 0; //Dúvida, não sei se posso definir valor em ".h"
     int Atuar, Cavalgar, Navegar, Erudicao, Seduzir, Furto, Arte_da_Guerra, Armas = 0;  //Dúvida, não sei se posso definir valor em ".h"
     //Fim das parícias
     public:
     //Construtor
+    Ficha(string Character_name_,string Campaign_name_);
     //Destrutor
     //Getters
+        //Informações do personagem
+    string getCampaign_name();
+    string getCharacter_name();
+    string getPlayer_name();
+    string getConcept();
+    string getNation();
+    string getReligion();
+    string getReputation();
+    int getRichness();
         //Atributos
     int getVigor();
     int getFinesse();
     int getArgucia();
     int getDeterminacao();
     int getPanache();
+        //Formações
+    string getFormationI();
+    string getFormationII();    
         //Pericias 
     int getMirar(), getAtletismo(), getBriga(), getConvencer(), getEmpatia(), getEsconder(), getIntimidar(), getObservar();
     int getAtuar(), getCavalgar(), getNavegar(), getErudicao(), getSeduzir(), getFurto(), getArte_da_Guerra(), getArmas();
@@ -58,9 +71,7 @@ class Ficha
     //Setters
     //Fim dos Setters
     //Funções diversas
-    void Campaign_verification();
-    void Create_campaign(string Campaign_name_);
-    void Character_name_verification(string Campaign_name_,string Character_name_);
+    int Character_name_verification(string Campaign_name_,string Character_name_);
     void Create_character(string Character_name_);
 
     void Attribute_bonus(string Attribute_);
