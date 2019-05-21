@@ -12,6 +12,7 @@ int main()
     Mar_system Primeiro;
     Cabecalho Segundo;
 
+    Segundo.Presentation();
     Segundo.Sea_menu();
     Primeiro.Executable();
     

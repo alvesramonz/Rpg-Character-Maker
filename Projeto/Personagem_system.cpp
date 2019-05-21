@@ -126,7 +126,8 @@ using namespace std;
               system("clear");
           //Formações
               cout << "Começaremos agora a parte das formações e para iniciarmos colocaremos aqui um lista de profissões e seus respectivos bônus!" << endl;
-              /*Professions();*/
+              Cabecalho *Cabecalho_[1];
+              Cabecalho_[1]->Professions();
               cout << "Agora escolha uma formação: ";
               getline(cin, FormationI);
               setFormationI(FormationI);

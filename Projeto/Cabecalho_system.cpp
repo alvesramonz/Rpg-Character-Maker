@@ -43,12 +43,10 @@ void Cabecalho::Sea_menu()
     cout << "     |       [1] Adicionar campanha (Mestre)             |" << endl;  
     cout << "     |       [2] Criação de ficha                        |" << endl;  
     cout << "     |       [3] Criação de Vilão/Monstro (Mestre)       |" << endl;  
-    cout << "     |       [4] Apagar ficha                            |" << endl;  
-    cout << "     |       [5] Listar fichas p/Jogador                 |" << endl; 
-    cout << "     |       [6] Listar fichas p/Campanha                |" << endl;
-    cout << "     |       [7] Opções                                  |" << endl;
-    cout << "     |       [8] Limpar tela                             |" << endl;
-    cout << "     |       [9] Tabelas                                 |" << endl;
+    cout << "     |       [4] Listar fichas criadas                   |" << endl;
+    cout << "     |       [5] Opções                                  |" << endl;
+    cout << "     |       [6] Limpar tela                             |" << endl;
+    //cout << "     |       [7] Tabelas [Unidade 3]                     |" << endl;
     cout << "     |       [0] Sair                                    |" << endl;
     cout << "     |___________________________________________________|" << endl;
     cout << "      Seu comando: ";
