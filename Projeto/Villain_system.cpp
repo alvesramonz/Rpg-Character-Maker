@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> 
 #include <fstream>
 #include <cstring>
 #include "Villain.h"
@@ -50,7 +50,7 @@ using namespace std;
 //Funções
 
     /**/
-    void Villain::Create_character(string Player_name_,string Character_name_) 
+    void Villain::Create_character(string Player_name_,string Character_name_, string Campaign_name_) 
     {
         ofstream File;
         char* Conversor = ConvertStrToCharV(Character_name_);
@@ -59,6 +59,7 @@ using namespace std;
         setCharacter_name(Character_name_);
         
         //Informações do Personagem
+            setCampaign_name(Campaign_name_);
             cout << "A partir de agora será feito o registro das informações do seu Vilão, fique atento!" << endl;
             cout << "\n\nDigite a religião ddo seu Vilão (caso não tenha digite Ateu, mas religião é muito importante): ";
             getline(cin, Religion);
@@ -116,13 +117,18 @@ using namespace std;
                         File << "                |-OBSERVAR:"<<getObservar()<<"         -ARMAS:"<<getArmas()<<"          |-----111------|" << endl; 
                         File << "________________|______________________________________|-----111------|" << endl;  
                         }
+            //setMirar(0), setAtletismo(0), setBriga(0), setConvencer(0), setEmpatia(0), setEsconder(0), setIntimidar(0), setObservar(0);
+            //setAtuar(0), setCavalgar(0), setNavegar(0), setErudicao(0), setSeduzir(0), setFurto(0), setArte_da_Guerra(0), setArmas(0);
     }
 
     /**/
     void Villain::Expertise(int Pontos_)
     {
         string Expertise_;
-
+            /*Reset de variaveis*/
+                Mirar = 0; Atletismo = 0; Briga = 0; Convencer = 0; Empatia = 0; Esconder = 0;
+                Intimidar = 0; Observar = 0; Atuar = 0; Cavalgar = 0; Navegar = 0; Erudicao = 0;
+                Seduzir = 0; Furto  = 0; Arte_da_Guerra = 0; Armas = 0;
         do
         {   
             setMirar(Mirar), setAtletismo(Atletismo), setBriga(Briga), setConvencer(Convencer), setEmpatia(Empatia), setEsconder(Esconder), setIntimidar(Intimidar), setObservar(Observar);
@@ -152,7 +158,6 @@ using namespace std;
     int Villain::Expertise_calc(string Expertise_, int Pontos_)
     {
         int Pontos_final = 0;
-
         if(Expertise_ == "Mirar")
         {
             if((Pontos_ - Mirar) > 0)
@@ -336,3 +341,10 @@ using namespace std;
         } 
             return Pontos_final;
     }
+
+    /*Unidade 3*/
+        std::ostream& operator<< (std::ostream &o, Villain *Villain)
+        {
+        o << "Campanha: " << Villain->getCampaign_name() <<" - Jogador: " << Villain->getPlayer_name()<<" - Personagem: "<< Villain->getCharacter_name();
+        return o;
+        }

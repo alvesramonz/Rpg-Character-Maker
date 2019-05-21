@@ -5,6 +5,10 @@
 
 //Getters
     //Informações
+        string Ficha::getCampaign_name()
+        {
+            return Campaign_name;
+        }
         string Ficha::getCharacter_name()
         {
             return Character_name;
@@ -92,6 +96,10 @@
         }
 //Setters
     //Informações
+        void Ficha::setCampaign_name(string Campaign_name_)
+        {
+            Campaign_name = Campaign_name_;
+        }
         void Ficha::setCharacter_name(string Character_name_)
         {
             Character_name = Character_name_;

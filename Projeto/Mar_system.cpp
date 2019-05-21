@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <fstream>
-#include <cstring>
+#include <cstring> 
 #include "Personagem.h"
 #include "Cabecalho.h"
 #include "Mar.h"
@@ -65,8 +65,8 @@ using namespace std;
                                 cout << "Digite o seu nome(jogador): ";
                                 getline(cin, Player_name);
                                 system("clear");
-                                Result = Campaign_verification2_2(Campaign_name);
-                                Fichas_[Result-1]->Create_character(Player_name, Character_name); 
+                                //Result = Campaign_verification2_2(Campaign_name);
+                                Fichas_[Numero_de_fichas-1]->Create_character(Player_name, Character_name, Campaign_name); 
                             }
                         }
                             system("clear");
@@ -79,7 +79,6 @@ using namespace std;
                         {
                             Add_Villain(new Villain(Campaign_name, Dungeon_master));
                             cout << "Digite o nome de seu Vilão [Ex: Drácula V, Zumbi V, Fulano V]: ";
-                            //cin.ignore();
                             getline(cin,Character_name);
                             Result = Character_name_verification(Campaign_name,Character_name);
                             if (Result >=0)
@@ -87,14 +86,24 @@ using namespace std;
                                 cout << "Digite o seu nome(mestre): ";
                                 getline(cin, Player_name);
                                 system("clear");
-                                Result = Campaign_verification2_2(Campaign_name);
-                                Villain_[Result-1]->Create_character(Player_name, Character_name); 
+                                //Result = Campaign_verification2_2(Campaign_name);
+                                Villain_[Numero_de_viloes-1]->Create_character(Player_name, Character_name, Campaign_name); 
                             }
                         }
                             system("clear");
                             cout << "Esperando novo comando do usuário...\n\n" << endl;
                             Cabecalho_[1]->Sea_menu();
                     break; 
+                    case 4:
+                    Ficha_list();
+                            cout << "Esperando novo comando do usuário...\n\n" << endl;
+                            Cabecalho_[1]->Sea_menu();
+                    break;
+                    case 5:
+                        /*Unidade 3*/ 
+                            cout << "Esperando novo comando do usuário...\n\n" << endl;
+                            Cabecalho_[1]->Sea_menu();
+                    break;
                     }    
             }
     } 
@@ -117,8 +126,14 @@ using namespace std;
             }else if (Usuario_comando == 3)
             {
                 Opcao = 3;
-            }
-            
+            }else if (Usuario_comando == 4)
+            {
+                Opcao = 4;
+            }else if (Usuario_comando == 5)
+            {
+                /*Unidade 3*/ 
+                Opcao = 5;
+            }       
         }while(Opcao == 0);  
         return Opcao;
     }
@@ -204,7 +219,7 @@ using namespace std;
                 return Verificador;
     }
 
-    /**/
+    /*Unidade 3*/ 
     int Mar_system::Campaign_verification2_2(string Campaign_name_)
     {
 
@@ -315,4 +330,24 @@ using namespace std;
         {
                 cerr << "Nosso sistema não suporta mais ficha no momento, volte mais tarde!" << endl;
         }
+    }
+
+    /**/ 
+    void Mar_system::Ficha_list()
+    {
+        for(int i = 0; i<Numero_de_fichas; i++)
+        {
+            cout << "Ficha " << i+1 << ": " << Fichas_[i] << endl;
+        }
+            cout << endl;
+    }
+
+    /*Unidade 3*/ 
+    void Mar_system::Villain_list()
+    {
+        for(int i = 0; i<Numero_de_viloes; i++)
+        {
+            cout << "Vilão " << i+1 << ": " << Villain_[i+1] << endl;
+        }
+            cout << endl;
     }

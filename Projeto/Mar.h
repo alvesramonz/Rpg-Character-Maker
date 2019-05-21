@@ -1,4 +1,4 @@
-#ifndef MAR_H_
+#ifndef MAR_H_ 
 #define MAR_H_ 
 
 #include <iostream>
@@ -49,6 +49,8 @@ class Mar_system
     void Add_ficha(Personagem *Fichas_);
     void Add_Villain(Villain *Villain_);
     void Executable();
+    void Ficha_list();
+    void Villain_list();
 };
 
 #endif

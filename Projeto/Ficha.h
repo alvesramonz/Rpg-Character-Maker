@@ -43,6 +43,8 @@ class Ficha
                 //Pericias
                     void setMirar(int Mirar_), setAtletismo(int Atletismo_), setBriga(int Brigar_), setConvencer(int Convencer_), setEmpatia(int Empatia_), setEsconder	 (int Esconder_), setIntimidar(int Intimidar_), setObservar(int Observar_);
                     void setAtuar(int Atuar_), setCavalgar(int Cavalgar_), setNavegar(int Navegar_), setErudicao(int Erudicao_), setSeduzir(int Seduzir_), setFurto(int Furto_), setArte_da_Guerra(int Arte_da_Guerra_), setArmas(int Armas_);
+                //Funções
+                    
 };
 
 #endif

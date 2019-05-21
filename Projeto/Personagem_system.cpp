@@ -1,5 +1,5 @@
 
-#include <iostream>
+#include <iostream> 
 #include <fstream>
 #include <string>
 #include "Personagem.h"
@@ -84,9 +84,8 @@ using namespace std;
             Panache = Panache_;
         }  
 //Funções
-
     /**/
-    void Personagem::Create_character(string Player_name_,string Character_name_) 
+    void Personagem::Create_character(string Player_name_,string Character_name_, string Campaign_name_) 
     {
         ofstream File;
         char* Conversor = ConvertStrToCharP(Character_name_);
@@ -95,6 +94,7 @@ using namespace std;
         setCharacter_name(Character_name_);
         
         //Informações do Personagem
+            setCampaign_name(Campaign_name_);
             cout << "A partir de agora será feito o registro das informações do personagem, fique atento!" << endl;
             cout << "\n\nDigite a religião de seu personagem (caso não tenha digite Ateu, mas religião é muito importante): ";
             getline(cin, Religion);
@@ -672,7 +672,6 @@ using namespace std;
     {
         int Pontos = 10;
         string Expertise_;
-
         do
         {   
             cout << "\n\n\t\tVoce possui > " << Pontos << " < pontos para gastar em perícias." << endl;
@@ -700,9 +699,13 @@ using namespace std;
             /*      Pontos - Ficha_[i]-> getMirar() 
                 Isso é para fazer o cálculo do gasto com base no seu valor atual de pontos para gastar*/
         } while (Pontos > 0);
+            /*Reset de variaveis*/
+                Mirar = 0; Atletismo = 0; Briga = 0; Convencer = 0; Empatia = 0; Esconder = 0;
+                Intimidar = 0; Observar = 0; Atuar = 0; Cavalgar = 0; Navegar = 0; Erudicao = 0;
+                Seduzir = 0; Furto  = 0; Arte_da_Guerra = 0; Armas = 0;
     }
 
-/**/
+    /**/
     int Personagem::Expertise_calc(string Expertise_, int Pontos_)
     {
         int Pontos_final = 0;
@@ -889,4 +892,11 @@ using namespace std;
             cout << "Nome da perícia digitada está incorreto." << endl;
         } 
             return Pontos_final;
+    }
+
+    /**/
+    std::ostream& operator<< (std::ostream &o, Personagem *Ficha)
+    {
+    o << "Campanha: " << Ficha->getCampaign_name() <<" - Jogador: " << Ficha->getPlayer_name()<<" - Personagem: "<< Ficha->getCharacter_name();
+    return o;
     }

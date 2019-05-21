@@ -65,9 +65,9 @@ class Personagem:public Ficha
             void Attribute_bonus(string Attribute_);
             void Expertise_from_profession(string Profession_);
             void Expertise();
-            void Create_character(string Player_name_, string Character_name_);
+            void Create_character(string Player_name_, string Character_name_, string Campaign_name_);
             int Expertise_calc(string Expertise_, int Pontos_);
-            //friend std::ostream& operator<< (std::ostream &o, Ficha *Ficha);
+            friend std::ostream& operator<< (std::ostream &o, Personagem *Ficha);
 
 
 };
